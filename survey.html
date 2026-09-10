@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--title must be survey–jenna besignano
+centered in the browser window, layout must contain header, sidebar, content, and footer sections.-->
+
+<head>
+    <title>Survey–Jenna Besignano</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/process_form.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <header><span class="headerOutline">Kitty Survey!</span></header><!--header=name of quiz-->
+        </div>
+        <div class="content"><!--content contains the survey, divided into two styled fieldsets with legends and the badge
+            output-->
+            <form id="userForm">
+                <fieldset><!--personal info-->
+
+                    <legend>Personal Information</legend>
+                    <div class="hint-container">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required pattern="^[A-Z][a-zA-Z]*$">
+                        <div id="invalidFirstNameHint" class="hint">Invalid first name.</div>
+                        <div id="validFirstNameHint" class="hint">Valid first name!</div>
+                    </div>
+                    <div class="hint-container">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required pattern="^[A-Z][a-zA-Z\s']*$">
+                        <div id="invalidLastNameHint" class="hint">Invalid last name.
+                        </div>
+                        <div id="validLastNameHint" class="hint">Valid last name!</div>
+                    </div>
+                    <div class="hint-container">
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" required pattern="^\d{3} \d{3}-\d{4}$">
+                        <div id="invalidPhoneNumberHint" class="hint">Invalid phone number.</div>
+                        <div id="validPhoneNumberHint" class="hint">Valid phone number!</div>
+                    </div>
+                    <div class="hint-container">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required pattern="^\w+@\w+\.(com|edu)$">
+                        <div id="invalidEmailHint" class="hint">Invalid email address.</div>
+                        <div id="validEmailHint" class="hint">Valid email address!</div>
+                    </div>
+                    <div class="hint-container">
+                        <label for="websiteURL">Website URL:</label>
+                        <input type="text" id="websiteURL" name="websiteURL" required pattern="^https:\/\/.*~.*\/$">
+                        <div id="invalidUrlHint" class="hint">Invalid website URL.</div>
+                        <div id="validUrlHint" class="hint">Valid Website URL!</div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <!--survey questions
+                //note: all survey questions must have radio buttons. questions should have obvious visual dividers. at least two questions, each question must have at least two options.-->
+                    <legend>Survey Questions</legend>
+                    <p>Do you have a cat?</p>
+                    <label>
+                        <input type="radio" name="question1" value="yes" required>
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value="no" required>
+                        No
+                    </label>
+                    <hr>
+                    <p>Do you love your cat?</p>
+                    <label>
+                        <input type="radio" name="question2" value="not really" required>
+                        Not really!
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="very much" required>
+                        Very Much!
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="don't have a cat" required>
+                        I already said I don't have a cat!
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="userInfo" class="user-info-box">
+                <p id="firstNameOutput"></p>
+                <p id="lastNameOutput"></p>
+                <p id="phoneNumberOutput"></p>
+                <p id="emailOutput"></p>
+                <p id="websiteURLOutput"></p>
+            </div>
+        </div>
+        <div class="badges">
+            <!--badges must display all personal information that the user has previously entered
+            create at least two different badge images-->
+            <div class="badge1">
+                <img src="img/badge1.jpeg" alt="badge1">
+            </div>
+            <div class="badge2">
+                <img src="img/badge2.jpeg" alt="badge2">
+            </div>
+
+        </div>
+        <div class="footer"><!--footer contains text" Created for DIG3716c by Jenna Besignano"-->
+            <p>Created for DIG3716c by Jenna Besignano</p>
+        </div>
+    </div>
+</body>
+
+</html>
