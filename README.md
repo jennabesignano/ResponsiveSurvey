@@ -16,3 +16,17 @@ spaces, or apostrophes “’”, and that the input starts with a capital lette
 
 • Website URL – check that the input at least contains a tilde (~), a trailing slash “/”, and begin
 with https://
+
+ 
+
+**Example Test Inputs:**
+
+First Name: **Guy**
+
+Last Name: **Smith**
+
+Phone: **888 888-8888**
+
+Email: **email@email.com**
+
+Website: **https://student.edu/~student/**
