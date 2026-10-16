@@ -4,11 +4,15 @@ I programmed this website for my Client-Side Scripting class, in which I was tas
 
 **Validation:**
 
-First name – check that something has been entered, the user has entered only letters, and
+• First name – check that something has been entered, the user has entered only letters, and
 that the input starts with a capital letter
+
 • Last name – check that something has been entered, the user has entered only letters,
 spaces, or apostrophes “’”, and that the input starts with a capital letter
+
 • Phone – must be numbers and in the pattern XXX XXX-XXXX
+
 • Email – check that the input at least follows the pattern blah@blah.com or blah@blah.edu
+
 • Website URL – check that the input at least contains a tilde (~), a trailing slash “/”, and begin
 with https://
